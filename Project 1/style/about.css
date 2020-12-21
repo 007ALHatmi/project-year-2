@@ -1,0 +1,70 @@
+body{  
+   background-size: cover;
+    background-color: beige;
+}
+header{ 
+font-family: Arial, Helvetica, sans-serif;  
+    border-style:  groove none groove none;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-family:"Bahnschrift Condensed";
+    font-size: 25px;
+}
+ nav li  :hover {
+    background-color:beige;
+}
+main{  
+    margin-bottom: 5%; 
+   text-align: center;
+}
+h1,h2,h3{
+     color: burlywood;
+}
+.div{
+    margin-top: 55px;
+    margin-left:5% ;
+    margin-right: 5%;
+}
+section img{   
+    width: 100%; 
+}
+section img:hover{
+    border: 1px solid burlywood;
+} 
+section footer{
+   background-color: rgba(255,255,255,0.5);
+    font-family:sans-serif;
+}
+ section.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ section.container {
+  padding: 10px 20px;
+}
+video{
+    margin-top: 5%;
+   border: 1px solid black;
+    height: 390px; width: 45%;
+}
+ section{
+    display:inline-block;
+}
+footer{  
+    text-align: center; 
+    height: 90px;
+    border-style: groove none groove none;  
+    
+}
+@media only screen and (max-width: 720px) {
+ .div section{
+      display:inherit;
+      width: 80%;
+     margin-left: 55px;
+     margin-bottom: 2%; 
+  }
+   
+}
+}

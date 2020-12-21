@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Log In">
+        <meta name="Aurthor" content="Bashar ALHatmi">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="Home.html"><img src="images/logo.jpg" alt="logo" width="70" height="70"></a>
+            <a class="navbar-brand" href="aboutUs.html">Re:Zero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="shop.html">Cloths</a>
+          <a class="dropdown-item" href="#">Shoses</a>
+          <a class="dropdown-item" href="#">Accessories</a>
+        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" id="logout" href="#">
+                        Login </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent"><i class="fa fa-user"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" id="updateaccount" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="update.html">User Details</a>
+                    </div>
+                </div>
+
+
+
+                <div class="btn-toolbar">
+                    <a class="nav-item nav-link" href="checkout.html">
+                        <button type="button" class="btn btn-secondary ml-2">Checkout <i class="fa fa-shopping-cart"></i>
+                            <span class="badge badge-light" id="checkout"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="FName">First Name</label>
+                        <input type="text" class="form-control" name="FirstName" id="FName" placeholder="First name" title="Enter your First Name" pattern="[a-zA-Z]$" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="LName">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" id="LName" placeholder="Last name" title="Enter your Last Name" pattern="[a-zA-Z]$" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" name="email" id="Email" placeholder="email@example.com" title="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="Mobile">Mobile Number</label>
+                        <input type="tel" class="form-control" id="Mobile" name="mobile" pattern="[08][0-9]\s[0-9]{7}$" title="Number is in format 08x 1234567" placeholder="Begins with 08" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" name="password" placeholder="Password should contain at least 8 characters" title="Password must contain 8 characters minimum" pattern=".{8,}" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="rePassword">Repeat Password</label>
+                        <input type="password" class="form-control" name="Repeatpassword" id="rePassword" placeholder="Repeat Password" title="Password must be same" pattern=".{8,}" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio"> Female
+                    </label>
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Address</legend>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="address1"> Address</label>
+                    <input type="text" id="address1" class="form-control" name="address" placeholder="5 s. Main Street" title="Enter your Address" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="getEircode ">Eircode </label>
+                    <input type="text" class="form-control" id="getEircode " name="Eircode" pattern="[a-zA-Z][0-9]{2}\s[a-zA-Z,0-9]{4}" title="Eircode e.g. A65 F4E2 " placeholder="A91 ED2V" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="getcity"> City</label>
+                    <input type="text" class="form-control" id="getcity" name="city" placeholder="Sligo" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="state">Country</label>
+                    <input type="text" class="form-control" id="country" name="Country" placeholder="Ireland" required>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="agree">
+                <label for="agree">
+                    By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                </label>
+            </div>
+        </div>
+        <div class="clearfix">
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <input type='submit' class="btn btn-primary" value="Sign in">
+        </div>
+    </main>
+    <footer>
+        <p>Copyright Re:Zero © 2020</p>
+        <div class="template-demo">
+            <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
+            <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>
+            <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button>
+            <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button> </div>
+    </footer>
+    <script src="bootstap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstap/js/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
